@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#navbar {
+  background-color: #ffffff;
+  padding: 15px 80px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+}
+
+#navbar a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+
+#navbar #logo {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+#navbar .dot {
+  border-radius: 50%;
+  font-weight: bold;
+  color: #106EEA;
+}
+
+#navbar a:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: #fff;
+  transition: width .2s ease;
+  -webkit-transition: width .2s ease;
+}
+
+#navbar a:hover:after {
+  left: 0;
+  background: #fff;
+}
+
+#navbar a:hover {
+  color: #106EEA;
+}
+
+#navbar a.active {
+  color: #106EEA;
+}
+
+#navbar-right {
+  float: right;
+}
+
+@media screen and (max-width: 580px) {
+  #navbar {
+    padding: 20px 10px !important;
+  }
+  #navbar a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  #navbar-right {
+    float: none;
+  }
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 15px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 8px 14px;
+  background-color: inherit;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  font-weight: 600;
+}
+
+.dropdown:hover .dropbtn {
+  color: #106EEA;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+  z-index: 0;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#welcome {
+  width: 100%;
+  background-image: url("/assets/image/hero-bg.jpg");
+  min-height: 73vh;
+}
+
+.fa-play-circle {
+  color: #106EEA;
+  font-size: 40px;
+}
+
+.startedbtn {
+  border-radius: 12%;
+  text-align: center;
+  background-color: #106EEA;
+  color: #ffffff;
+  border-color: #106EEA;
+}
+
+.slider-summary {
+  font-family: 'Poppins', sans-serif;
+  margin: 50px 50px;
+}
+
+.slider-summary h2 {
+  font-size: 50px;
+  font-weight: 700;
+  display: inline;
+  margin-left: 10px;
+}
+
+.slider-summary .scnd {
+  color: #106EEA;
+}
+
+.slider-summary P {
+  font-size: 25px;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+}
+/*# sourceMappingURL=main.css.map */
