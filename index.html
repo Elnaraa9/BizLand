@@ -10,7 +10,9 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" />
     <script src="./assets/js/main.js" defer></script>
     <link rel="stylesheet" href="./assets/css/main.css">
     <title>BizLand</title>
@@ -18,18 +20,36 @@
 
 <body>
     <header>
+        <div class="head">
+            <div class="container">
+                <div class="row hd-row">
+                    <div class="head-item">
+                        <a href="email"><i class="far fa-envelope"></i>contact@example.com</a>
+                        <a href="phone"><i class="fas fa-mobile-alt"></i>+1 5589 55488 55</a>
+                    </div>
+                    <div class="social-medias">
+                        <a href="twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="linkedin"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
         <nav>
+
             <div id="navbar">
-                <a href="#default" id="logo">BizLand</a>
-                <span class="dot">.</span>
+                <div class="logo">
+                    <a href="#" class="logo-b"><span>BizLand</span><span class="dot">.</span></a>
+                </div>
                 <div id="navbar-right">
-                    <a class="active" href="#home">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#services">Services</a>
-                    <a href="#portfolio">Portfolio</a>
-                    <a href="#team">Team</a>
+                    <a class="active hover-underline-animation" href="#home">Home</a>
+                    <a class="hover-underline-animation" href="#about">About</a>
+                    <a class="hover-underline-animation" href="#services">Services</a>
+                    <a class="hover-underline-animation" href="#portfolio">Portfolio</a>
+                    <a class="hover-underline-animation" href="#team">Team</a>
                     <div class="dropdown">
-                        <button class="dropbtn">Dropdown
+                        <button class="dropbtn hover-underline-animation">Dropdown
                             <i class="fa fa-caret-down"></i></button>
                         <div class="dropdown-content">
                             <a href="#">Drop Down 1</a>
@@ -51,7 +71,7 @@
 
                         </div>
                     </div>
-                    <a href="#contact">Contact</a>
+                    <a href="#contact" class="hover-underline-animation">Contact</a>
                 </div>
         </nav>
     </header>
@@ -64,9 +84,27 @@
                 <div class="slider-item">
                     <button class="startedbtn">GET STARTED</button>
                     <i class="far fa-play-circle"></i>
-                    <span>Watch Video</span>
+                    <a href="https://youtu.be/wQla4moFIpk" class="link">Watch Video</a>
                 </div>
             </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="container">
+            <div class="about_btn">
+                <button class="btn_about">ABOUT</button>
+            </div>
+            <div class="about-header">
+                <h2>Find Out More<span class="abt">
+                        About Us</span></h2>
+            </div>
+            <div class="about_summary">
+                <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque
+                    vitae autem.</p>
+            </div>
+<div class=""> 
+
+</div>
         </div>
     </section>
 </body>

@@ -5,6 +5,24 @@
           box-sizing: border-box;
 }
 
+#rectangle {
+  background-color: #106EEA;
+  height: 40px;
+  width: 100%;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+  font-family: 'Open', sans-serif;
+}
+
+.link:hover {
+  color: #106EEA;
+}
+
 #navbar {
   background-color: #ffffff;
   padding: 15px 80px;
@@ -26,10 +44,11 @@
   font-weight: 600;
 }
 
-#navbar #logo {
+#navbar .logo-b {
   font-family: 'Open Sans', sans-serif;
   font-size: 35px;
   font-weight: 600;
+  pointer-events: none;
 }
 
 #navbar .dot {
@@ -51,11 +70,6 @@
   -webkit-transition: width .2s ease;
 }
 
-#navbar a:hover:after {
-  left: 0;
-  background: #fff;
-}
-
 #navbar a:hover {
   color: #106EEA;
 }
@@ -66,6 +80,36 @@
 
 #navbar-right {
   float: right;
+}
+
+#navbar-right .hover-underline-animation {
+  display: inline-block;
+  position: relative;
+}
+
+#navbar-right .hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #106EEA;
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  -webkit-transition: -webkit-transform 0.2s ease-out;
+  transition: -webkit-transform 0.2s ease-out;
+  transition: transform 0.2s ease-out;
+  transition: transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
+}
+
+#navbar-right .hover-underline-animation:hover:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
 }
 
 @media screen and (max-width: 580px) {
@@ -130,6 +174,10 @@
   width: 100%;
   background-image: url("/assets/image/hero-bg.jpg");
   min-height: 73vh;
+  opacity: 0.5;
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .fa-play-circle {
@@ -138,10 +186,11 @@
 }
 
 .startedbtn {
-  border-radius: 12%;
+  border-radius: 5%;
   text-align: center;
   background-color: #106EEA;
   color: #ffffff;
+  padding: 11px 25px;
   border-color: #106EEA;
 }
 
@@ -154,7 +203,6 @@
   font-size: 50px;
   font-weight: 700;
   display: inline;
-  margin-left: 10px;
 }
 
 .slider-summary .scnd {
@@ -162,8 +210,56 @@
 }
 
 .slider-summary P {
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 400;
   font-family: 'Poppins', sans-serif;
+}
+
+#about {
+  background-color: #f6f9fe;
+  min-height: 80vh;
+  background-repeat: no-repeat;
+  padding: 50px;
+}
+
+.about_btn {
+  text-align: center;
+}
+
+.about_btn .btn_about {
+  padding: 7px 16px;
+  margin-bottom: 15px;
+  background-color: #e7f1fd;
+  height: 32px;
+  width: 88px;
+  font-family: 'Open', sans-serif;
+  font-weight: 600;
+  color: #106EEA;
+  font-size: 11px;
+  border-radius: 18px;
+  border: none;
+}
+
+.about-header {
+  font-family: 'Open',sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.about-header h2 {
+  color: #444444;
+}
+
+.about-header .abt {
+  color: #106EEA;
+}
+
+.about_summary {
+  font-family: 'Open',sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */
